@@ -1,6 +1,5 @@
 #include <iostream>
 #include <array>
-using namespace std;
 
 int main() {
 	int myData [10];
@@ -8,25 +7,25 @@ int main() {
 
 	for (int i = 0; i < 10; i++) {
 		myData[i] = 1;
-		cout << myData[i] << " ";
+		std::cout << myData[i] << " ";
 	}
 
 	do {
-		cout << "\n\nInput index: ";
-		cin >> index;
-		cout << "Input value: ";
-		cin >> value;
+		std::cout << "\n\nInput index: ";
+		std::cin >> index;
+		std::cout << "Input value: ";
+		std::cin >> value;
 
 		if (index > 9 || index < 0) {
-			cout << "\nIndex out of range. Exit." << endl;
+			std::cout << "\nIndex out of range. Exit." << std::endl;
 			break;
 		}
 
 		myData[index] = value;
 
-		cout << endl;
+		std::cout << endl;
 		for (int i = 0; i < 10; i++) {
-			cout << myData[i] << " ";
+			std::cout << myData[i] << " ";
 		}
 
 	} while(index >=0 && index < 10);

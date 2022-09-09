@@ -1,19 +1,18 @@
 #include <iostream>
-using namespace std;
 
 int main() {
 	int inputN;
 
-	cout << "Please enter an integer: ";
-	cin >> inputN;
+	std::cout << "Please enter an integer: ";
+	std::cin >> inputN;
 
 	while (inputN >= 100 || inputN <= 0) {
-		cout << "Please re-enter: ";
-		cin >> inputN;
+		std::cout << "Please re-enter: ";
+		std::cin >> inputN;
 	
 	}
 
-	cout << "\nNumber squared is " << inputN*inputN << endl;
+	std::cout << "\nNumber squared is " << inputN*inputN << std::endl;
 	
 
 	return 0;
