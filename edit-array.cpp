@@ -23,7 +23,7 @@ int main() {
 
 		myData[index] = value;
 
-		std::cout << endl;
+		std::cout << std::endl;
 		for (int i = 0; i < 10; i++) {
 			std::cout << myData[i] << " ";
 		}
